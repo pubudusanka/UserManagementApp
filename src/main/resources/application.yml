@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/usermanagement?createDatabaseIfNotExist=true
+    username: root
+    password: Smax@0251
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: FGW390@#7&Ounjkebu!#%%GHOPQasx&Q
+  expiration: 3600000
+
