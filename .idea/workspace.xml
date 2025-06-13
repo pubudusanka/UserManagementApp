@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3469837b-b9fb-43bc-be82-2e965c29ebaa" name="Changes" comment="" />
+    <list default="true" id="3469837b-b9fb-43bc-be82-2e965c29ebaa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/frontend/usermanagement/src/services/Authservices.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/usermanagement/src/services/Authservices.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +22,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2yRueekFygdP8jPmefIbKx0Ne2C" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,7 +35,12 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -55,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1749809805991</updated>
       <workItem from="1749809807724" duration="27000" />
+      <workItem from="1749811354776" duration="804000" />
     </task>
     <servers />
   </component>
