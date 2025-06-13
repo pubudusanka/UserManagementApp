@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import {authService} from '../services/Authservices';
+import "../styles/Navbar.css";
 
 const Navbar = () => {
 
