@@ -156,5 +156,31 @@ const authService = {
             console.error("Update Profile Failed", error);
             throw error;
         }
+    },
+
+    //get all users
+    getAllUsers: async () => {
+        try {
+            const response = await api.get('/users/getAllUsers');
+            return response.data;
+        }
+        catch(error){
+            console.error('Failed to fetch all users', error);
+            throw error
+        }
+    },
+
+    //delete user
+    deleteUser: async (userId) => {
+        try{
+            const response = await api.delete('users/deleteuser/{userId}');
+            return response.data
+        }
+        catch(error){
+            console.error('Failed to delete user',error);
+            throw error;
+        }
     }
-}
+};
+
+export {api, authService};
