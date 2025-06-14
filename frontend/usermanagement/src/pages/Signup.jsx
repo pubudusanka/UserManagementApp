@@ -10,7 +10,7 @@ const Signup = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const handleSignUp = async (e) => {
         e.preventDefault();
@@ -53,7 +53,6 @@ const Signup = () => {
                     </div>
                     <div className="form-group">
                         <label htmlFor="email">Email</label>
-                        <label htmlFor="username">Username</label>
                         <input 
                         type="email"
                         id="email"

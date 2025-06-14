@@ -27,17 +27,19 @@
     text-align: center;
 }
 
-.form-group{
+.form-name{
     margin-bottom: 15px;
+    margin-right: 20px;
 }
 
-.form-group label{
+.form-name label{
     display: block;
     margin-bottom: 5px;
     color: #666;
+    font-weight: bold;
 }
 
-.form-group input{
+.form-name input{
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
