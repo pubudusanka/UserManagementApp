@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3469837b-b9fb-43bc-be82-2e965c29ebaa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/usermanagement/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/usermanagement/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/usermanagement/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/usermanagement/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/usermanagement/src/components/ProtectedRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/usermanagement/src/components/ProtectedRoute.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/usermanagement/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/usermanagement/src/pages/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/usermanagement/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/usermanagement/src/pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/usermanagement/src/pages/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/usermanagement/src/pages/Signup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/usermanagement/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/usermanagement/src/App.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
