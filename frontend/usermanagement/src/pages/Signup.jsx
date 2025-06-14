@@ -1,6 +1,7 @@
 import { useState, useNavigate } from 'react';
 import { Link } from 'react-router-dom';
 import { authService } from '../services/Authservices';
+import '../styles/Signup.css';
 
 const Signup = () => {
 
