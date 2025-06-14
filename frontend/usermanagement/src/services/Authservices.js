@@ -22,7 +22,7 @@ api.interceptors.response.use(
                 case 401: //unauthorized
                     //redirect to login or logout
                     authService.logout();
-                    window.location.href = '/login';
+                    window.location.href = `/login`;
                     break;
                 case 403: //forbidden
                     console.error("Access forbidden");
@@ -51,7 +51,7 @@ const authService = {
     // sign up method
     signupNormalUser: async (username, email, password) => {
         try{
-            const response = await api.post('/auth/registernormaluser',{
+            const response = await api.post(`/auth/registernormaluser`,{
                 username,
                 email,
                 password
@@ -67,7 +67,7 @@ const authService = {
     // Login method
     login: async (username, password) => {
         try{
-            const response = await api.post('/auth/login', {
+            const response = await api.post(`/auth/login`, {
                 username,
                 password
             });
@@ -88,7 +88,7 @@ const authService = {
     // fetch current user
     fetchCurrentUser: async () => {
         try {
-            const response = await api.get('/auth/getcurrentuser');
+            const response = await api.get(`/auth/getcurrentuser`);
 
             // store userdto in local storage for quick access
             localStorage.setItem('user', JSON.stringify(response.data));
@@ -107,7 +107,7 @@ const authService = {
 
     //get current user from local storage
     getCurrentUser: () => {
-        const user = localStorage.getItem('user');
+        const user = localStorage.getItem(`user`);
         try{
             return user ? JSON.parse(user) : null;
         }
@@ -121,7 +121,7 @@ const authService = {
     logout: async () => {
         try {
             //call the backend api
-            await api.post('/auth/logout');
+            await api.post(`/auth/logout`);
 
             //clear user from local storage
             localStorage.removeItem('user');
@@ -161,7 +161,7 @@ const authService = {
     //get all users
     getAllUsers: async () => {
         try {
-            const response = await api.get('/users/getAllUsers');
+            const response = await api.get(`/users/getAllUsers`);
             return response.data;
         }
         catch(error){
@@ -173,11 +173,31 @@ const authService = {
     //delete user
     deleteUser: async (userId) => {
         try{
-            const response = await api.delete('users/deleteuser/{userId}');
+            const response = await api.delete(`users/deleteuser/{userId}`);
             return response.data
         }
         catch(error){
             console.error('Failed to delete user',error);
+            throw error;
+        }
+    },
+
+    //change password
+    changePassword: async (currentPassword, newPassword, confirmPassword) => {
+        try{
+            const currentUser = authService.getCurrentUser();
+            if(!currentUser || !currentUser.id){
+                throw new Error('User not Found');
+            }
+            const response = await api.put(`/users/changepassword/${currentUser.id}`,{
+                currentPassword,
+                newPassword,
+                confirmPassword
+            });
+            return response.data;
+        }
+        catch(error){
+            console.error("Failed to change the password",error);
             throw error;
         }
     }
