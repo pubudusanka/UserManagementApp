@@ -18,7 +18,7 @@ public class RegisterRequestDto {
     private String email;
 
     @NotBlank
-    @Size(min = 8, max = 50)
+    @Size(min = 5, max = 50)
     private String password;
 
 }
