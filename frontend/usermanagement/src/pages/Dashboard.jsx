@@ -1,5 +1,5 @@
 import { useEffect, useState, } from 'react';
-import authService from '../services/authService';
+import { authService } from '../services/authService';
 import "../styles/Dashboard.css";
 
 const PasswordChangeModel = ({isOpen, onClose, onSave}) => {
@@ -300,3 +300,5 @@ const Dashboard = () => {
         </div>
     );
 };
+
+export default Dashboard;
