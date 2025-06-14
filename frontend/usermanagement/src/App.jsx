@@ -1,17 +1,30 @@
-import {Route, Router, Routes} from 'react-router-dom';
+import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Mainpage from './pages/Mainpage';
 import Signup from './pages/Signup';
 import ProtectedRoute from './components/ProtectedRoute';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
-import { createBrowserHistory } from 'history';
 
-const history = createBrowserHistory();
+//use BrowserRouter as Router is the simply solution for route management
 
 function App() {
+
+  // const history = createBrowserHistory();
+  // const [location, setLocation] = useState(history.location);
+
+  // useEffect(()=>{
+  //   const unlisten = history.listen(({location}) => {
+  //     setLocation(location);
+  //   });
+
+  //   //clean up the listner when component unmount
+  //   return () => unlisten();
+  // }, [history]);
+
   return (
-    <Router location={history.location} navigator={history}>
+    <Router>
+      {/*<Router location={history.location} navigator={history}></Router>*/}
       <div className="app">
         <Navbar />
           <Routes>
