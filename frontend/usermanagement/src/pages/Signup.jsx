@@ -1,5 +1,5 @@
-import { useState, useNavigate } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import { authService } from '../services/authService';
 import '../styles/Signup.css';
 
@@ -10,7 +10,7 @@ const Signup = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const handleSignUp = async (e) => {
         e.preventDefault();
