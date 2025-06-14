@@ -91,7 +91,8 @@ const authService = {
             const response = await api.get('/auth/getcurrentuser');
 
             // store userdto in local storage for quick access
-            localStorage.setItem('user', JSON.stringify(response.data));
+            const userData = JSON.stringify(response.data);
+            localStorage.setItem('user',userData);
             return response.data;
         }
         catch(error){
@@ -107,7 +108,7 @@ const authService = {
 
     //get current user from local storage
     getCurrentUser: () => {
-        const user = localStorage.getItem(`user`);
+        const user = localStorage.getItem('user');
         try{
             return user ? JSON.parse(user) : null;
         }

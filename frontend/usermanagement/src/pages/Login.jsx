@@ -14,7 +14,7 @@ const Login = () => {
         setError('');
 
         try{
-            await authService.login(username,passowrd);
+            await authService.login(username,password);
             navigate("/");
         }
         catch{
