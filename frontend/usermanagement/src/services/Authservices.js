@@ -143,5 +143,18 @@ const authService = {
             console.error("Error checking authentication", error);
             return false; // if there's an error, assume not authenticated
         }
+    },
+    // update user profile
+    updateProfile: async (userData) => {
+        try {
+            const response = await api.put(`/users/updateuser/${userData.id}`, userData);
+            const currentUser = authService.getCurrentUser();
+            const updatedUser = {...currentUser, ...response.data};
+            localStorage.setItem('user', JSON.stringify(updatedUser));
+        }
+        catch (error) {
+            console.error("Update Profile Failed", error);
+            throw error;
+        }
     }
 }
