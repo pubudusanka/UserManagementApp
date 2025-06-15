@@ -109,8 +109,9 @@ public class AuthService {
     public UserDto convertToUserDto(User user) {
         UserDto userDto = new UserDto();
         userDto.setId(user.getId());
-        userDto.setUsername(userDto.getUsername());
-        userDto.setEmail(userDto.getEmail());
+        userDto.setUsername(user.getUsername());
+        userDto.setEmail(user.getEmail());
+        userDto.setRoles(user.getRoles());
         return userDto;
     }
 }
