@@ -63,8 +63,8 @@ const PasswordChangeModel = ({isOpen, onClose, onSave}) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 const UsersTable = () => {
     const [allusers, setAllUsers] = useState([]);
@@ -90,7 +90,8 @@ const UsersTable = () => {
     const handleDeleteUser = async (userId) => {
         try{
             await authService.deleteUser(userId);
-            setAllUsers(allusers.filter(user => user.id !== user));
+            const updatedUsers = await authService.getAllUsers();
+            setAllUsers(updatedUsers);
         }
         catch(error){
             console.error("Failed to delete the user")
@@ -113,7 +114,7 @@ const UsersTable = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {allusers.map(user => {
+                    {allusers.map(user => (
                         <tr key={user.id}>
                             <td>{user.id}</td>
                             <td>{user.username}</td>
@@ -122,7 +123,7 @@ const UsersTable = () => {
                                 <button className='btn btn-danger' onClick={() => handleDeleteUser(user.id)}>Delete User</button>
                             </td>
                         </tr>
-                    })}
+                    ))}
                 </tbody>
             </table>
         </div>
