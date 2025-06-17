@@ -64,6 +64,21 @@ const authService = {
         }
     },
 
+    // //signup admin user
+    // signUpAdminUser: async(username, email, password) =>{
+    //     try{
+    //         const response = await api.post('/auth/registeradminuser',{
+    //             username,
+    //             email,
+    //             password
+    //         });
+    //     }
+    //     catch(error){
+    //         console.error("Sign up failed",error);
+    //         throw error;
+    //     }
+    // },
+
     // Login method
     login: async (username, password) => {
         try{
@@ -162,7 +177,7 @@ const authService = {
     //get all users
     getAllUsers: async () => {
         try {
-            const response = await api.get('/users/getAllUsers');
+            const response = await api.get('/users/getallusers');
             return response.data;
         }
         catch(error){

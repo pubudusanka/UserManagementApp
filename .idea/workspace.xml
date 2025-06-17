@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3469837b-b9fb-43bc-be82-2e965c29ebaa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce3dfe12-9564-43df-9718-de8871afa49d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ce3dfe12-9564-43df-9718-de8871afa49d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/UserManagementApp/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/UserManagementApp/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/UserManagementApp/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/UserManagementApp/service/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/UserManagementApp/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/UserManagementApp/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +96,7 @@
       <updated>1749809805991</updated>
       <workItem from="1749809807724" duration="27000" />
       <workItem from="1749811354776" duration="804000" />
-      <workItem from="1749965780767" duration="1553000" />
+      <workItem from="1749965780767" duration="3653000" />
     </task>
     <servers />
   </component>
